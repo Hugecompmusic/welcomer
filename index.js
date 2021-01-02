@@ -3,7 +3,7 @@ const client = new discord.Client();
 const {TOKEN} = require('./config.json');
 //Welcome & goodbye messages\\
 client.on('ready', () => {
-    console.log('im ready to welcome');
+    console.log(`im ready to welcome and i am ${client.user.username}`);
     client.user.setActivity('burrito by HugeCompMusic');
 });
 client.on('guildMemberAdd', member => {
